@@ -12,14 +12,20 @@
     $voc = array("a","e","i","o","u");
     $lletres = str_split($_POST["text"]);
     $cont=0;
+    $conto=0;
     foreach ($lletres as $key => $value) {
         foreach ($voc as $key2 => $value2) {
             if($value==$value2){
                 $cont+=1;
+            
+            }
+            if($value=="o"){
+                $conto+=1;
             }
         }
     }
     echo("Te ".$cont." vocals")
+    echo("Te ".$conto." o's")
     ?>
 </body>
 </html>

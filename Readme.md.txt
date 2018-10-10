@@ -1,0 +1,1 @@
+El programa llegeix les vocals i les os que l'hi posis
